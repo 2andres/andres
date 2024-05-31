@@ -40,7 +40,7 @@ export const mostrarUsuario = async(req, res)=>{
     let id = req.params.id;
 
     try {
-        
+
         const resultado = await pool.query(`select * from usuario where idusuario = ${id}`);
         res.json(resultado[0]);
 

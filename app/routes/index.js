@@ -1,10 +1,10 @@
 import { Router } from "express";
 import rutaUsuario from "./routes.usuario.js";
-import rutaAprendiz from "./routes.aprendiz.js";
+// import rutapersonas from "./routes.personas.js";
 
 const ruta = Router();
 
 ruta.use("/api", rutaUsuario);
-ruta.use("/api", rutaAprendiz);
+// ruta.use("/api", rutapersonas);
 
 export default ruta;
